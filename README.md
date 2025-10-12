@@ -56,10 +56,10 @@ R · MICE · ggplot2 · DHARMa · dplyr · broom
 
 ## Repository Structure
 
-code/ → R scripts (data prep, imputation, model, diagnostics)
-figures/ → key visualizations
-report/ → short summary PDF
-README.md → this file
+-code/ → R scripts (data prep, imputation, model, diagnostics)
+-figures/ → key visualizations
+-report/ → short summary PDF
+-README.md → this file
 
 
 ---
