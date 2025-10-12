@@ -8,7 +8,7 @@ Demonstrates applied skills in **statistical modeling**, **data ethics**, and **
 
 ---
 
-## 📊 Dataset
+## Dataset
 New York City Stop-and-Frisk data (~5 million records, 2003–2013).  
 Key variables:  
 `force`, `race2`, `gender`, `age2`, `daytime`, `ac_incid`, `ac_time`, `inout2`, `offunif2`.
@@ -18,7 +18,7 @@ Key variables:
 
 ---
 
-## 🧠 Methods
+## Methods
 - Exploratory Data Analysis (EDA)
 - Missing data handled with **Multiple Imputation by Chained Equations (MICE)**
 - Logistic Regression  
@@ -31,7 +31,7 @@ Key variables:
 
 ---
 
-## 📈 Results
+## Results
 | Variable | Interpretation |
 |-----------|----------------|
 | **Black / Hispanic** | Higher odds of force use vs White baseline |
@@ -43,9 +43,28 @@ Key variables:
 
 ---
 
-## 🧰 Tools
+## Tools
 R · MICE · ggplot2 · DHARMa · dplyr · broom
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
+code/ → R scripts (data prep, model, diagnostics)
+figures/ → key plots and visualizations
+report/ → full HTML report
+README.md → summary (this file)
+
+
+---
+
+## Key Takeaways
+- Worked with a **large, real-world dataset** involving missing data  
+- Applied **statistical reasoning** to assess bias and fairness  
+- Communicated uncertainty and model assumptions clearly  
+- Practiced **ethical research** by separating personal and group work
+
+---
+
+
+**Portfolio Site:** [ginakp99.github.io](https://ginakp99.github.io)
+
