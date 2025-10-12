@@ -73,9 +73,12 @@ R · MICE · ggplot2 · DHARMa · dplyr · broom
 ---
 
 ## Key Takeaways
-- Worked with a **large, real-world dataset**  
-- Applied **statistical reasoning** to detect bias and ensure fairness  
-- Communicated uncertainty & model assumptions clearly  
+- Worked with a **large, real-world dataset**
+  
+- Applied **statistical reasoning** to detect bias and ensure fairness
+  
+- Communicated uncertainty & model assumptions clearly
+  
 - Practiced **ethical and reproducible ML analysis**
 
 ---
