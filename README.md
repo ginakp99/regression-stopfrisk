@@ -1,21 +1,51 @@
-# Stop-and-Frisk Regression (UCPH – MSc in Statistics)
+# Detecting Racial Bias in Stop-and-Frisk (NYC 2003 – 2013)
 
-Personal, cleaned replication of a group assignment for the course *Regression* (University of Copenhagen, MSc in Statistics).  
-The goal is to examine whether race is associated with the use of force in NYC stop-and-frisk interactions (2003–2013).  
+**Goal:** Investigate whether the likelihood of police using force during Stop-and-Frisk incidents depends on civilian race,  
+after controlling for demographic and contextual factors.
 
-## Structure
-- `scripts/` → R scripts for cleaning, modeling, and diagnostics  
-- `figures/` → Plots and visualizations  
-- `README.md` → Project description  
+Developed for the *Regression* course, University of Copenhagen (2023).  
+Demonstrates applied skills in **statistical modeling**, **data ethics**, and **reproducible analysis**.
 
-## Methods
-- Logistic regression (main effects)  
-- Splines for non-linear age effects  
-- Interactions between race and contextual variables  
-- Cross-validation (10-fold)  
+---
 
-## How to run
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/ginakp99/regression-stopfrisk.git
-   cd regression-stopfrisk
+## 📊 Dataset
+New York City Stop-and-Frisk data (~5 million records, 2003–2013).  
+Key variables:  
+`force`, `race2`, `gender`, `age2`, `daytime`, `ac_incid`, `ac_time`, `inout2`, `offunif2`.
+
+**Outcome:** `force > 0` → 1 if force used, 0 otherwise.  
+**Focus:** Detect racial disparities in use of force.
+
+---
+
+## 🧠 Methods
+- Exploratory Data Analysis (EDA)
+- Missing data handled with **Multiple Imputation by Chained Equations (MICE)**
+- Logistic Regression  
+  \[
+  \text{logit}(p_i)=\beta_0+\beta_1\text{race}_i+\beta_2\text{gender}_i+\beta_3\text{age}_i+\dots
+  \]
+- Model selection by AIC, validation via 80/20 split  
+- Diagnostics using **DHARMa**  
+- Interaction term `race × daytime`
+
+---
+
+## 📈 Results
+| Variable | Interpretation |
+|-----------|----------------|
+| **Black / Hispanic** | Higher odds of force use vs White baseline |
+| **Female** | Lower probability of force |
+| **High-crime area/time** | Strong positive association with force |
+
+**AUC ≈ 0.74** → good model discrimination.  
+**Conclusion:** Racial disparities persist even after adjustment for confounders.
+
+---
+
+## 🧰 Tools
+R · MICE · ggplot2 · DHARMa · dplyr · broom
+
+---
+
+## 📂 Repository Structure
