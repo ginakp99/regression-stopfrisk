@@ -65,5 +65,6 @@ README.md → summary (this file)
 ---
 
 
-**Portfolio Site:** [ginakp99.github.io](https://ginakp99.github.io)
+ **Portfolio:** [ginakp99.github.io](https://ginakp99.github.io/)
+
 
