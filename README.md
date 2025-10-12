@@ -22,9 +22,7 @@ Key variables:
 - Exploratory Data Analysis (EDA)
 - Missing data handled with **Multiple Imputation by Chained Equations (MICE)**
 - Logistic Regression  
-  $$
-  \text{logit}(p_i)=\beta_0+\beta_1\text{race}_i+\beta_2\text{gender}_i+\beta_3\text{age}_i+\dots
-  $$
+  ![Logistic regression formula](https://latex.codecogs.com/png.image?\dpi{120}\large\text{logit}(p_i)=\beta_0+\beta_1\text{race}_i+\beta_2\text{gender}_i+\beta_3\text{age}_i+\dots)
 - Model selection by AIC, validation via 80/20 split  
 - Diagnostics using **DHARMa**  
 - Interaction term `race × daytime`
